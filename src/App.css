@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: NotoSans;
+  src: url(./Asset/font/NotoSans.ttf) ;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./Asset/font/Poppins-Regular.ttf) ;
+}
