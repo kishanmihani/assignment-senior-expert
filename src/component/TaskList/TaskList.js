@@ -32,7 +32,7 @@ export default class TaskList extends PureComponent {
     this.editTask=this.editTask.bind(this)
   }
   tasklistdata= async ()=>{
-   const data =await axios.get('http://localhost:3000/employees/')
+   const data =await axios.get('http://localhost:3001/employees/')
     .then(function (response) {
      return response.data;
       })
@@ -45,7 +45,7 @@ export default class TaskList extends PureComponent {
   }
   deletetask=async (event, id)=>{
     
-    await axios.delete('http://localhost:3000/employees/'+id)
+    await axios.delete('http://localhost:3001/employees/'+id)
     .then(function (response) {
      return response;
       })
@@ -113,7 +113,7 @@ export default class TaskList extends PureComponent {
     const {selecttaskrecod} = this.state;
     
         
-            const fetchonerec=await  axios.get('http://localhost:3000/employees/'+id)
+            const fetchonerec=await  axios.get('http://localhost:3001/employees/'+id)
             .then(function (response) {
              return response.data[0];
               })
@@ -220,7 +220,7 @@ tablestatusupdate(event, id) {
       onSubmit={(values,{resetForm}) => {
         // const datalist=this.state.datalist;
         
-        axios.post('http://localhost:3000/employees/',values)
+        axios.post('http://localhost:3001/employees/',values)
         .then(function (response) {
          return response;
           })
@@ -315,7 +315,7 @@ tablestatusupdate(event, id) {
       onSubmit={(values,{resetForm}) => {
         // const datalist=this.state.datalist;
         const {updatetaskid}=this.state;
-        axios.put('http://localhost:3000/employees/'+selecttaskrecod.id,values)
+        axios.put('http://localhost:3001/employees/'+selecttaskrecod.id,values)
         .then(function (response) {
          return response;
           })
