@@ -145,7 +145,7 @@ tablestatusupdate(event, id) {
   render() {
     const {selecttaskrecod} = this.state;
     return (
-      <div className='card w-100 h-100 '>
+      <div className='card w-100 h-100 border-0'>
           <div className='card-header '>
             <p className='text-danger fs-5 fw-bolder test-start bg-white'>Task List </p>
           </div>
