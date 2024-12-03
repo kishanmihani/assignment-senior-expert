@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Webindex from './component/sensiro/Webindex';
+// import Webindex from './component/sensiro/Webindex';
 import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
+import TaskList from './component/TaskList/TaskList';
 function App() {
   return (
     <div className="App">
       <PrimeReactProvider>
-       <Webindex />
+       <TaskList />
       </PrimeReactProvider>
     </div>
   );
